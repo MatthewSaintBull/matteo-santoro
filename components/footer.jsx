@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 const FooterComponent = () => {
     const [data, setData] = useState(null)
     const [loadingData, setLoadingData] = useState(false)
+
     useEffect(() => {
         async function fetchData() {
             setLoadingData(true)
             const response = await fetch('/api/contactInfo')
             const infos = await response.json()
             setData(infos)
-            console.log('data: ', data)
             setLoadingData(false)
         }
         fetchData()
-    }, [])
+    },[])
 
     if (loadingData) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>

@@ -5,6 +5,7 @@ const CompanySection = (props) => {
     const { companyInfo } = props
     const [expand, setExpand] = useState(false)
     const detailsRef = useRef(null)
+    
     useEffect(() => {
         if (expand) {
             detailsRef.current.classList.remove("hidden")
@@ -15,6 +16,7 @@ const CompanySection = (props) => {
             detailsRef.current.classList.remove("animate-expand")
         }
     }, [expand])
+
     return (
         <div className="grid grid-cols-1 sm:grid-cols-3 items-center justify-items-center p-2 space-y-2 md:space-y-0">
             <picture>
