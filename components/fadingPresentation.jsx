@@ -6,7 +6,7 @@ function FadingPresentation() {
 
     return render ?
         (
-            <div className='flex flex-col justify-center h-screen align-middle items-center text-5xl animate-fadeout p-2 space-y-2' ref={ref} onAnimationEnd = {e => {
+            <div className='overflow-hidden flex flex-col justify-center h-screen align-middle items-center text-5xl animate-fadeout p-2 space-y-2' ref={ref} onAnimationEnd = {e => {
                 if (e.target === e.currentTarget) {
                     setRender(false)
                 }
