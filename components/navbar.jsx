@@ -28,8 +28,8 @@ return (
         <div className="w-full bg-slate-300 absolute transition-all duration-500 ease-out h-0 overflow-hidden shadow-xl" ref={menuRef}>
             <ul className="flex flex-col divide-y-[1px] divide-slate-400">
                 <li className="hover:bg-slate-400 text-slate-900 cursor-pointer h-10 text-left text-xl w-full pl-2 flex items-center">Home</li>
-                <li className="hover:bg-slate-400 text-slate-900 cursor-pointer h-10 text-left text-xl w-full pl-2 flex items-center">Bio</li>
-                <li className="hover:bg-slate-400 text-slate-900 cursor-pointer h-10 text-left text-xl w-full pl-2 flex items-center">Certifications & Competences</li>
+                <li className="text-slate-900 cursor-pointer h-10 text-left text-xl w-full pl-2 flex items-center">Bio - WIP</li>
+                <li className="text-slate-900 cursor-pointer h-10 text-left text-xl w-full pl-2 flex items-center">Certifications & Competences - WIP</li>
             </ul>
         </div>
     </div>
