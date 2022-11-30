@@ -5,7 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    listStyleType:{
+    listStyleType: {
       square: 'square'
     },
     extend: {
@@ -14,11 +14,18 @@ module.exports = {
           from: { opacity: 1 },
           to: { opacity: 0 },
         },
+        fadein: {
+          from: { opacity: 0 },
+          to: { opacity: 1 }
+        }
       },
       animation: {
-        fadeout: 'fadeout 3s forwards;',
+        fadeout: 'fadeout 3s forwards',
+        fadein: 'fadein 5s forwards'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
